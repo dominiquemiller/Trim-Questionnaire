@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fullname: MyString
+  email: MyString
+  repo: MyString
+  url: MyString
+  oop: 1
+  modular: 1
+  workflow: 1
+  testing: 1
+  database: 1
+  problem: 1
+  javascript: 1
+  html: 1
+  css: 1
+  team: 1
+  self: 1
+  communication: 1
+  debugging: 1
+
+two:
+  fullname: MyString
+  email: MyString
+  repo: MyString
+  url: MyString
+  oop: 1
+  modular: 1
+  workflow: 1
+  testing: 1
+  database: 1
+  problem: 1
+  javascript: 1
+  html: 1
+  css: 1
+  team: 1
+  self: 1
+  communication: 1
+  debugging: 1

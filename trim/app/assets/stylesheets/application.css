@@ -13,3 +13,4 @@
  *= require_tree .
  *= require_self
  */
+ @include font-face(MuseoSans, 'MuseoSans/MuseoSans_500-webfont', normal, $asset-pipeline: true);
