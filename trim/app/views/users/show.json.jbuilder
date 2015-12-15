@@ -1,1 +1,1 @@
-json.extract! @user, :id, :fullname, :email, :repo, :url, :oop, :modular, :workflow, :testing, :database, :problem, :javascript, :html, :css, :team, :self, :communication, :debugging, :created_at, :updated_at
+json.extract! @user, :id, :fullname, :email, :repo, :url, :oop, :modular, :workflow, :testing, :database, :problem, :javascript, :html, :css, :team, :selfmotivate, :communication, :debugging, :created_at, :updated_at

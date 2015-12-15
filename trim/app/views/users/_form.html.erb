@@ -1,6 +1,6 @@
 
 
-
+      <div class="form-border">
         <%= form_for(@user) do |f| %>
           <% if @user.errors.any? %>
             <div id="error_explanation">
@@ -60,7 +60,7 @@
             <p class="form-label">WORKING ON A TEAM: <%= f.number_field :team, class:"inputbox-small" %></p>
           </div>
           <div class="field">
-            <p class="form-label">SELF MOTIVATION: <%= f.number_field :self, class:"inputbox-small" %></p>
+            <p class="form-label">SELF MOTIVATION: <%= f.number_field :selfmotivate, class:"inputbox-small" %></p>
           </div>
           <div class="field">
             <p class="form-label">COMMUNICATION SKILLS: <%= f.number_field :communication, class:"inputbox-small" %></p>
@@ -71,6 +71,7 @@
           <div class="actions">
             <%= f.submit "SUBMIT", class:"inputbox" %>
           </div>
+    </div>
 
 
         <% end %>
