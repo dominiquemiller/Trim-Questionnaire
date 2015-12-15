@@ -1,9 +1,8 @@
 class UserMailer < ApplicationMailer
   default from: "apprentice@trimagency.com"
 
-  def apprentice_email(user)
+  def send_apprentice_email(user)
     @user = user
-    @url = "https://trimagency.com"
-    mail(to: 'tim@trimagency.com', subject: 'new apprentice info')
+    mail(to: 'dominique.p.miller@gmail.com', subject: 'new apprentice info')
   end
 end
