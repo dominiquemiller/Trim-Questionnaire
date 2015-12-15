@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>New Apprentice Email</title>
+  </head>
+  <body>
+    <p>Looks like you have another potential candidant!</p>
+    <p>
+      The users name is: <%= @user.fullname %>.
+    </p>
+    <p>
+     <%= @user.fullname %> email is <%= @user.email %>.
+    </p>
+
+    <br>
+
+    <p>
+      Apprentice project repo: <%= @user.repo %>.
+    </p>
+    <p>
+      Apprentice project URL: <%= @user.url %>.
+    </p>
+
+    <br>
+
+    <p>Scores</p>
+    <ul>
+      <li>USING BEST PRACTICES FOR OOP: <%= @user.oop %></li>
+      <li>MODULAR DEVELOPMENT: <%= @user.modular %></li>
+      <li>FULL STACK WORKFLOW UNDERSTANDING: <%= @user.workflow %></li>
+      <li>TESTING: <%= @user.testing %></li>
+      <li>DATABASE KNOWLEDGE: <%= @user.database %></li>
+      <li>PROBLEM SOLVING SKILLS: <%= @user.problem %></li>
+      <li>JAVASCRIPT: <%= @user.javascript %></li>
+      <li>HTML: <%= @user.html %></li>
+      <li>CSS: <%= @user.css %></li>
+      <li>WORKING ON A TEAM: <%= @user.team %></li>
+      <li>SELF MOTIVATION: <%= @user.selfmot %></li>
+      <li>COMMUNICATION SKILLS: <%= @user.communication %></li>
+      <li>DEBUGGIN: <%= @user.debuggin %></li>
+    </ul>
+
+  </body>
+</html>
