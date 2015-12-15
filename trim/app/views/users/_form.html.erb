@@ -12,74 +12,61 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :fullname %><br>
-    <%= f.text_field :fullname %>
+    <%# f.label :fullname, placeholder: :fullname %><br>
+    <%= f.text_field :fullname, placeholder: :fullname%>
   </div>
   <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <%# f.label :email %><br>
+    <%= f.text_field :email, placeholder: :email %>
   </div>
   <div class="field">
-    <%= f.label :repo %><br>
-    <%= f.text_field :repo %>
+    <%# f.label :repo %><br>
+    <%= f.text_field :repo, placeholder: :project_repo %>
   </div>
   <div class="field">
-    <%= f.label :url %><br>
-    <%= f.text_field :url %>
+    <%# f.label :url %><br>
+    <%= f.text_field :url, placeholder: :project_url %>
   </div>
   <div class="field">
-    <%= f.label :oop %><br>
-    <%= f.number_field :oop %>
+    <p>USING BEST PRACTICES FOR OOP: <%= f.number_field :oop %></p>
   </div>
   <div class="field">
-    <%= f.label :modular %><br>
-    <%= f.number_field :modular %>
+    <p>MODULAR DEVELOPMENT: <%= f.number_field :modular %></p>
   </div>
   <div class="field">
-    <%= f.label :workflow %><br>
-    <%= f.number_field :workflow %>
+    <p>FULL STACK WORKFLOW UNDERSTANDING: <%= f.number_field :workflow %></p>
   </div>
   <div class="field">
-    <%= f.label :testing %><br>
-    <%= f.number_field :testing %>
+    <p>TESTING: <%= f.number_field :testing %></p>
   </div>
   <div class="field">
-    <%= f.label :database %><br>
-    <%= f.number_field :database %>
+    <p>DATABASE KNOWLEDGE: <%= f.number_field :database %></p>
   </div>
   <div class="field">
-    <%= f.label :problem %><br>
-    <%= f.number_field :problem %>
+    <P>PROBLEM SOLVING SKILLS: <%= f.number_field :problem %></p>
   </div>
   <div class="field">
-    <%= f.label :javascript %><br>
-    <%= f.number_field :javascript %>
+    <p>JAVASCRIPT: <%= f.number_field :javascript %></p>
   </div>
   <div class="field">
-    <%= f.label :html %><br>
-    <%= f.number_field :html %>
+    <p>HTML: <%= f.number_field :html %><p>
   </div>
   <div class="field">
-    <%= f.label :css %><br>
-    <%= f.number_field :css %>
+    <p>CSS: <%= f.number_field :css %></p>
   </div>
   <div class="field">
-    <%= f.label :team %><br>
-    <%= f.number_field :team %>
+    <p>WORKING ON A TEAM: <%= f.number_field :team %></p>
   </div>
   <div class="field">
-    <%= f.label :self %><br>
-    <%= f.number_field :self %>
+    <p>SELF MOTIVATION: <%= f.number_field :self %></p>
   </div>
   <div class="field">
-    <%= f.label :communication %><br>
-    <%= f.number_field :communication %>
+    <p>COMMUNICATION SKILLS: <%= f.number_field :communication %></p>
   </div>
   <div class="field">
-    <%= f.label :debugging %><br>
-    <%= f.number_field :debugging %>
+    <p>DEBUGGING: <%= f.number_field :debugging %></p>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "SUBMIT" %>
   </div>
 <% end %>
