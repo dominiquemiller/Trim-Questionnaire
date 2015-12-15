@@ -2,6 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .landing {
-  font-family: MuseoSans;
+  font-family: museo_sans500;
   font-weight: 500;
+}
+
+.inputbox {
+  font-family: museo_sans500;
+  color:black;
+  height: 50px !important;
+  width: 400px;
+  background-color: green;
+}
+
+.inputbox-small {
+  font-family: museo_sans500;
+  color:black;
+  height: 50px !important;
+  width: 75px;
+  background-color: green;
+}
+
+.form-label {
+  font-family: museo_sans500;
+  
 }

@@ -1,72 +1,76 @@
-<%= form_for(@user) do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
-      <ul>
-      <% @user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-  <div class="field">
-    <%# f.label :fullname, placeholder: :fullname %><br>
-    <%= f.text_field :fullname, placeholder: :fullname%>
-  </div>
-  <div class="field">
-    <%# f.label :email %><br>
-    <%= f.text_field :email, placeholder: :email %>
-  </div>
-  <div class="field">
-    <%# f.label :repo %><br>
-    <%= f.text_field :repo, placeholder: :project_repo %>
-  </div>
-  <div class="field">
-    <%# f.label :url %><br>
-    <%= f.text_field :url, placeholder: :project_url %>
-  </div>
-  <div class="field">
-    <p>USING BEST PRACTICES FOR OOP: <%= f.number_field :oop %></p>
-  </div>
-  <div class="field">
-    <p>MODULAR DEVELOPMENT: <%= f.number_field :modular %></p>
-  </div>
-  <div class="field">
-    <p>FULL STACK WORKFLOW UNDERSTANDING: <%= f.number_field :workflow %></p>
-  </div>
-  <div class="field">
-    <p>TESTING: <%= f.number_field :testing %></p>
-  </div>
-  <div class="field">
-    <p>DATABASE KNOWLEDGE: <%= f.number_field :database %></p>
-  </div>
-  <div class="field">
-    <P>PROBLEM SOLVING SKILLS: <%= f.number_field :problem %></p>
-  </div>
-  <div class="field">
-    <p>JAVASCRIPT: <%= f.number_field :javascript %></p>
-  </div>
-  <div class="field">
-    <p>HTML: <%= f.number_field :html %><p>
-  </div>
-  <div class="field">
-    <p>CSS: <%= f.number_field :css %></p>
-  </div>
-  <div class="field">
-    <p>WORKING ON A TEAM: <%= f.number_field :team %></p>
-  </div>
-  <div class="field">
-    <p>SELF MOTIVATION: <%= f.number_field :self %></p>
-  </div>
-  <div class="field">
-    <p>COMMUNICATION SKILLS: <%= f.number_field :communication %></p>
-  </div>
-  <div class="field">
-    <p>DEBUGGING: <%= f.number_field :debugging %></p>
-  </div>
-  <div class="actions">
-    <%= f.submit "SUBMIT" %>
-  </div>
-<% end %>
+
+        <%= form_for(@user) do |f| %>
+          <% if @user.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+              <ul>
+              <% @user.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+              </ul>
+            </div>
+          <% end %>
+          <div class="field">
+            <%# f.label :fullname, placeholder: :fullname %>
+            <%= f.text_field :fullname, placeholder: :fullname, class:"inputbox"%>
+          </div>
+          <div class="field">
+            <%# f.label :email %>
+            <%= f.text_field :email, placeholder: :email, class:"inputbox" %>
+          </div>
+          <div class="field">
+            <%# f.label :repo %>
+            <%= f.text_field :repo, placeholder: :project_repo, class:"inputbox" %>
+          </div>
+          <div class="field">
+            <%# f.label :url %>
+            <%= f.text_field :url, placeholder: :project_url, class:"inputbox" %>
+          </div>
+          <div class="field">
+            <p class="form-label">USING BEST PRACTICES FOR OOP: <span><%= f.number_field :oop, class:"inputbox-small" %></span></p>
+          </div>
+          <div class="field">
+            <p class="form-label">MODULAR DEVELOPMENT: <%= f.number_field :modular, class:"inputbox-small" %></p>
+          </div>
+          <div class="field">
+            <p class="form-label">FULL STACK WORKFLOW UNDERSTANDING: <%= f.number_field :workflow, class:"inputbox-small"  %></p>
+          </div>
+          <div class="field">
+            <p class="form-label">TESTING: <%= f.number_field :testing, class:"inputbox-small" %></p>
+          </div>
+          <div class="field">
+            <p class="form-label">DATABASE KNOWLEDGE: <%= f.number_field :database, class:"inputbox-small" %></p>
+          </div>
+          <div class="field">
+            <p class="form-label">PROBLEM SOLVING SKILLS: <%= f.number_field :problem, class:"inputbox-small" %></p>
+          </div>
+          <div class="field">
+            <p class="form-label">JAVASCRIPT: <%= f.number_field :javascript, class:"inputbox-small" %></p>
+          </div>
+          <div class="field">
+            <p class="form-label">HTML: <%= f.number_field :html, class:"inputbox-small" %><p>
+          </div>
+          <div class="field">
+            <p class="form-label">CSS: <%= f.number_field :css, class:"inputbox-small" %></p>
+          </div>
+          <div class="field">
+            <p class="form-label">WORKING ON A TEAM: <%= f.number_field :team, class:"inputbox-small" %></p>
+          </div>
+          <div class="field">
+            <p class="form-label">SELF MOTIVATION: <%= f.number_field :self, class:"inputbox-small" %></p>
+          </div>
+          <div class="field">
+            <p class="form-label">COMMUNICATION SKILLS: <%= f.number_field :communication, class:"inputbox-small" %></p>
+          </div>
+          <div class="field">
+            <p class="form-label">DEBUGGING: <%= f.number_field :debugging, class:"inputbox-small" %></p>
+          </div>
+          <div class="actions">
+            <%= f.submit "SUBMIT", class:"inputbox" %>
+          </div>
+
+
+        <% end %>
