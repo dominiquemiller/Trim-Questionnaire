@@ -28,7 +28,7 @@ class UsersController < ApplicationController
     if @user.save
       # Deliver the signup email
       UserMailer.send_apprentice_email(@user).deliver
-      redirect_to(@user, :notice => 'User created')
+      redirect_to(@user, :notice => 'Your profile was created!')
     else
       render :action => 'new'
     end
