@@ -5,42 +5,42 @@
     <title>New Apprentice Email</title>
   </head>
   <body>
-    <p>Looks like you have another potential candidant!</p>
-    <p>
-      The users name is: <%= @user.fullname %>.
-    </p>
-    <p>
-     <%= @user.fullname %> email is <%= @user.email %>.
-    </p>
+
+
+    <h3>Looks like you have another potential candidant!</h3>
+
+    <hr>
+
+    <p>The users name is: <%= @user.fullname %>.</p>
+
+    <p><%= @user.fullname %> email is <%= @user.email %>.</p>
+
+    <p>Project repo: <%= @user.repo %>.</p>
+
+    <p>Project URL: <%= @user.url %>.</p>
 
     <br>
 
-    <p>
-      Apprentice project repo: <%= @user.repo %>.
-    </p>
-    <p>
-      Apprentice project URL: <%= @user.url %>.
-    </p>
+    <h3>Valuation Points:</h3>
 
-    <br>
+    <hr>
 
-    <p>Scores</p>
     <ul>
-      <li>USING BEST PRACTICES FOR OOP: <%= @user.oop %></li>
-      <li>MODULAR DEVELOPMENT: <%= @user.modular %></li>
-      <li>FULL STACK WORKFLOW UNDERSTANDING: <%= @user.workflow %></li>
-      <li>TESTING: <%= @user.testing %></li>
-      <li>DATABASE KNOWLEDGE: <%= @user.database %></li>
-      <li>PROBLEM SOLVING SKILLS: <%= @user.problem %></li>
-      <li>JAVASCRIPT: <%= @user.javascript %></li>
+      <li>Using best practices for OOP: <%= @user.oop %></li>
+      <li>Modular development: <%= @user.modular %></li>
+      <li>Full stack workflow understanding: <%= @user.workflow %></li>
+      <li>Testing: <%= @user.testing %></li>
+      <li>Database Knowledge: <%= @user.database %></li>
+      <li>Problem solving skills: <%= @user.problem %></li>
+      <li>javascript: <%= @user.javascript %></li>
       <li>HTML: <%= @user.html %></li>
       <li>CSS: <%= @user.css %></li>
-      <li>WORKING ON A TEAM: <%= @user.team %></li>
-      <li>SELF MOTIVATION: <%= @user.selfmotivate %></li>
-      <li>COMMUNICATION SKILLS: <%= @user.communication %></li>
-      <li>DEBUGGIN: <%= @user.debugging %></li>
-      <li>YOUR ENERGY LEVEL: <%= @user.energy %></li>
-      <li>INTELLIGENCE: <%= @user.intelligence %></li>
+      <li>Working on a team: <%= @user.team %></li>
+      <li>Self motivation: <%= @user.selfmotivate %></li>
+      <li>Communication skills: <%= @user.communication %></li>
+      <li>Debugging: <%= @user.debugging %></li>
+      <li>Your energy level: <%= @user.energy %></li>
+      <li>Intelligence: <%= @user.intelligence %></li>
     </ul>
 
   </body>

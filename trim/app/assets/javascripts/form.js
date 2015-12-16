@@ -1,7 +1,7 @@
 $(document).on("page:change", function() {
 // validates total points of Questionnaire = 50 points
 // works onclick of form submit button
-  $( ".inputbox" ).click(function( event ) {
+  $( "#submitbox" ).click(function( event ) {
     var team = $( '#team' ).val();
     var oop = $( '#oop' ).val();
     var modular = $( '#modular' ).val();
@@ -17,17 +17,17 @@ $(document).on("page:change", function() {
     var energy = $('#energy').val();
     var intelligence = $('#intelligence').val();
     var debugging = $( '#debugging' ).val();
-    var pointTotal = Number(team) + Number(oop) + Number(modular) + Number(testing) + Number(database) + Number(problem) +
+    var pointTotal = Number(team) + Number(oop) + Number(modular) + Number(workflow) + Number(testing) + Number(database) + Number(problem) +
                      Number(javascript) + Number(html) + Number(css) + Number(selfmotivate) + Number(communication) +
                      Number(debugging) + Number(energy) + Number(intelligence);
 
     if (pointTotal < 50) {
       event.preventDefault();
-      alert("You must use up to 50 points! Keep adding points!");
+      alert("You must use up to 50 points! Keep adding points your worth it!");
     }
     else if (pointTotal > 50) {
       event.preventDefault();
-      alert("You have more than 50 points! Decrease your point values!");
+      alert("You have more than 50 points! Decrease some values!");
     }
     });
 });

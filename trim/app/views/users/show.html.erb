@@ -1,99 +1,100 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Fullname:</strong>
-  <%= @user.fullname %>
-</p>
+<div class="container text-center landing">
+  <h1>Your user profile was successfully created. We will be in touch.</h1>
+</div>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+<div class="container landing">
+  <h3>INFO:</h3>
+  <div>
+    <p>Fullname:</p>
+    <%=@user.fullname %>
+  </div>
 
-<p>
-  <strong>Repo:</strong>
-  <%= @user.repo %>
-</p>
+  <br>
 
-<p>
-  <strong>Url:</strong>
-  <%= @user.url %>
-</p>
+  <div>
+    <p>Email:</p>
+    <%= @user.email %>
+  </div>
 
-<p>
-  <strong>Oop:</strong>
-  <%= @user.oop %>
-</p>
+  <br>
 
-<p>
-  <strong>Modular:</strong>
-  <%= @user.modular %>
-</p>
+  <div>
+    <p>Project Repo:</p>
+    <%= @user.repo %>
+  </div>
 
-<p>
-  <strong>Workflow:</strong>
-  <%= @user.workflow %>
-</p>
+  <br>
 
-<p>
-  <strong>Testing:</strong>
-  <%= @user.testing %>
-</p>
+  <div>
+    <p>Project Url:</p>
+    <%= @user.url %>
+  </div>
+  <hr>
 
-<p>
-  <strong>Database:</strong>
-  <%= @user.database %>
-</p>
+  <h3>Points:</h3>
+  <div>
+    <p>Using Best Practices For OOP: <%= @user.oop %></p>
+  </div>
 
-<p>
-  <strong>Problem:</strong>
-  <%= @user.problem %>
-</p>
+  <div>
+    <p>Modular Development: <%= @user.modular %></p>
+  </div>
 
-<p>
-  <strong>Javascript:</strong>
-  <%= @user.javascript %>
-</p>
+  <div>
+    <p>Full Stack Workflow Understanding: <%= @user.workflow %></p>
+  </div>
 
-<p>
-  <strong>Html:</strong>
-  <%= @user.html %>
-</p>
+  <div>
+    <p>Testing: <%= @user.testing %></p>
+  </div>
 
-<p>
-  <strong>Css:</strong>
-  <%= @user.css %>
-</p>
+  <div>
+    <p>Database Knowledge: <%= @user.database %></p>
+  </div>
 
-<p>
-  <strong>Team:</strong>
-  <%= @user.team %>
-</p>
+  <div>
+    <p>Problem Solving Skills: <%= @user.problem %></p>
+  </div>
 
-<p>
-  <strong>Self:</strong>
-  <%= @user.selfmotivate %>
-</p>
+  <div>
+    <p>Javascript: <%= @user.javascript %></p>
+  </div>
 
-<p>
-  <strong>Communication:</strong>
-  <%= @user.communication %>
-</p>
+  <div>
+    <p>HTML: <%= @user.html %></p>
+  </div>
 
-<p>
-  <strong>Debugging:</strong>
-  <%= @user.debugging %>
-</p>
+  <div>
+    <p>CSS: <%= @user.css %></p>
+  </div>
 
-<p>
-  <strong>Your Energy Level:</strong>
-  <%= @user.energy %>
-</p>
+  <div>
+    <p>Working on a Team: <%= @user.team %></p>
+  </div>
 
-<p>
-  <strong>Intelligence:</strong>
-  <%= @user.intelligence %>
-</p>
+  <div>
+    <p>Self Motivation: <%= @user.selfmotivate %></p>
+  </div>
 
+  <div>
+    <p>Communication Skills: <%= @user.communication %></p>
+  </div>
 
-<%= link_to 'Back', welcome_path %>
+  <div>
+    <p>Debuggin: <%= @user.debugging %></p>
+  </div>
+
+  <div>
+    <p>Your energy level: <%= @user.energy %></p>
+  </div>
+
+  <div>
+    <p>intelligence: <%= @user.intelligence %></p>
+  </div>
+
+  <div class="text-right">
+    <h3><%= link_to 'Back', welcome_path %></h3>
+  </div>
+
+</div>
