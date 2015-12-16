@@ -1,5 +1,6 @@
 $(document).on("page:change", function() {
-
+// validates total points of Questionnaire = 50 points
+// works onclick of form submit button
   $( ".inputbox" ).click(function( event ) {
     var team = $( '#team' ).val();
     var oop = $( '#oop' ).val();
