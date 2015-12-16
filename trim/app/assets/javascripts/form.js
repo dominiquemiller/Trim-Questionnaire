@@ -14,10 +14,12 @@ $(document).on("page:change", function() {
     var css = $( '#css' ).val();
     var selfmotivate = $( '#selfmotivate' ).val();
     var communication = $( '#communication' ).val();
+    var energy = $('#energy').val();
+    var intelligence = $('#intelligence').val();
     var debugging = $( '#debugging' ).val();
     var pointTotal = Number(team) + Number(oop) + Number(modular) + Number(testing) + Number(database) + Number(problem) +
                      Number(javascript) + Number(html) + Number(css) + Number(selfmotivate) + Number(communication) +
-                     Number(debugging);
+                     Number(debugging) + Number(energy) + Number(intelligence);
 
     if (pointTotal < 50) {
       event.preventDefault();
