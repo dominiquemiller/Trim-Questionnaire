@@ -4,30 +4,55 @@
 .landing {
   font-family: museo_sans500;
   font-weight: 500;
+  color: #E4FDE1;
+  
 }
 
 .inputbox {
   font-family: museo_sans500;
   font-size: 15px;
   color:black;
-  height: 50px !important;
-  width: 400px;
-  background-color: #b3ffb3;
+  height: 50px;
+  width: 100%;
+  background-color: #E4FDE1;
+}
+
+#submitbox {
+  background-color: #F45B69;
+  color: #E4FDE1;
 }
 
 .inputbox-small {
   font-family: museo_sans500;
-  color:black;
-  height: 50px !important;
+  color: #456990;
+  font-size: 15px;
+  height: 50px;
   width: 75px;
-  background-color: #b3ffb3;
+  background-color: #E4FDE1;
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+
+.label-text {
+  margin-top: 10px;
 }
 
 .form-label {
   font-family: museo_sans500;
+  color: #E4FDE1;
 
 }
 
 .form-border {
-  border: 1px solid black;
+  background-color: #456990;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form-header {
+  color: #E4FDE1;
+}
+
+body {
+  background-color: #114B5F;
 }
