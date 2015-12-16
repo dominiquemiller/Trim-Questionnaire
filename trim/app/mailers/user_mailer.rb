@@ -3,6 +3,6 @@ class UserMailer < ApplicationMailer
 
   def send_apprentice_email(user)
     @user = user
-    mail(to: 'dominique.p.miller@gmail.com', subject: 'new apprentice info')
+    mail(to: 'tim@trimagency.com', subject: 'new apprentice info')
   end
 end
